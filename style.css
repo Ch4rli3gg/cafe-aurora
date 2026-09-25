@@ -1,0 +1,233 @@
+body {
+    background-color: #f5efe6;
+    font-family: Georgia, sans-serif;
+    color: #3e2723;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: whitesmoke;
+    color: #;
+}
+
+header h1 {
+    margin: 0; 
+    font-family: Georgia, serif;
+    font-size: 3rem;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #3e2723;
+    text-decoration: none;
+    margin: 0 80px;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color:#6d4c41
+}
+
+/* Contenido principal */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main p {
+    font-size: 1.1rem;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #5d4037;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+}
+#inicio h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+#inicio p {
+    color: whitesmoke;
+}
+#menu ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#menu li {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 10px;
+    background-color: #f5efe6;
+    border-radius:12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#menu li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.30);
+}
+
+#inicio {
+    text-align: center;
+    padding: 80px 30px;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("Images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+#inicio a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: whitesmoke;
+    color: #3e2723;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#inicio a:hover {
+    background-color: #f5efe6;
+    color: #3e2723
+}
+
+#inicio p {
+    font-size: 1.3rem;
+}
+
+#menu img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.producto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    width: 80%;
+    margin-top: 0;
+}
+.producto-info span {
+    font-weight: bold;
+    
+}
+
+#nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#nosotros img {
+    max-width: 100%;
+    
+    border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+    
+    #menu ul {
+        grid-template-columns: 1fr;
+    }
+    #menu img {
+        width: 100%;
+        height: auto;
+    }
+    #nosotros {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #inicio {
+        min-height: 400px;
+        background-size: auto 100%;
+    }
+
+    #contacto div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+#contacto a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: white;
+    color: #3e2723;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#contacto a:hover {
+    background-color: #f5efe6;
+}
+footer {
+    background-color: #3e2723;
+    padding: 5px;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
